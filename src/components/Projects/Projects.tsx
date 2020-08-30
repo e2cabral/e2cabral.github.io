@@ -22,26 +22,25 @@ export const Projects = () => {
       </div>
       <div className="col-6 text-left">
         <h3>
-          Exemplo de Projeto
+          Projeto Reels Clone
         </h3>
         <p>
-        Mussum Ipsum, cacilds vidis litro abertis. 
-        Posuere libero varius. Nullam a nisl ut ante 
-        blandit hendrerit. Aenean sit amet nisi. 
-        Atirei o pau no gatis, per gatis num morreus. 
-        Tá deprimidis, eu conheço uma cachacis que 
-        pode alegrar sua vidis. Paisis, filhis, 
-        espiritis santis.
+        O projeto foi desenvolvido com o intuito de aprofundar 
+        o conhecimento em React, NodeJS e Firebase. O projeto 
+        foi desenvolvido seguindo o tutorial disponibilizado 
+        no YouTube pelo canal Clever Programming.
+        <br />
+        Um nova funcionalidade para gravação de vídeo está 
+        sendo estudada para ser implementada, mas no momento 
+        sem previsão de desenvolvimento.
         </p>
         <div className="pt-2">
           <h6>Tecnologias utilizadas</h6>
           <Reactjs className="icon-project" />
-          <Express className="icon-project" />
-          <Mongodb className="icon-project" />
           <Nodejs className="icon-project" />
         </div>
         <div className="pt-3">
-          <a href="https://e2cabral.github.io" className="btn btn-primary btn-round">
+          <a href="https://github.com/e2cabral/reels-clone" target="_blank" className="btn btn-primary btn-round">
             Ver Repositório
           </a>
         </div>
