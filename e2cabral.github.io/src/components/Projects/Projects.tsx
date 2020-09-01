@@ -17,10 +17,10 @@ export const Projects = () => {
       <div className="col-12 text-center">
         <Title title="Projetos" />
       </div>
-      <div className="col-4">
+      <div className="col-md-4 col-sm-4 col-xs-12">
         <img src={ReelsWithReactImg} alt="Raised Image" className="img-raised rounded img-fluid" />
       </div>
-      <div className="col-6 text-left">
+      <div className="col-md-6 col-sm-6 col-xs-12 text-left">
         <h3>
           Projeto Reels Clone
         </h3>
@@ -45,7 +45,7 @@ export const Projects = () => {
           </a>
         </div>
       </div>
-      <div className="col-2"></div>
+      <div className="col-md-2 col-sm-2 col-xs-12"></div>
     </div>
 
 
