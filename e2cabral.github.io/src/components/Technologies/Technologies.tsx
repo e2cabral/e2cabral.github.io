@@ -38,8 +38,8 @@ export const Technologies = () => {
     <div className="row py-5">
       <div className="col-12 text-center">
         <Title title="Tecnologias" />
-        <div className="row py-5">
-          <div className="col-3">
+        <div className="row">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Html className="icon-svg" />
               <Css className="icon-svg" />
@@ -50,7 +50,7 @@ export const Technologies = () => {
               <h5><strong>Design</strong></h5>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Vue className="icon-svg" />
               <Angular className="icon-svg" />
@@ -61,7 +61,7 @@ export const Technologies = () => {
               <h5><strong>Front-end</strong></h5>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Dotnet className="icon-svg" />
               <Express className="icon-svg" />
@@ -72,7 +72,7 @@ export const Technologies = () => {
               <h5><strong>Back-end</strong></h5>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Typescript className="icon-svg" />
               <Js className="icon-svg" />
@@ -85,8 +85,8 @@ export const Technologies = () => {
           </div>
         </div>
 
-        <div className="row py-5">
-          <div className="col-3">
+        <div className="row">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Postgresql className="icon-svg" />
               <Mysql className="icon-svg" />
@@ -97,7 +97,7 @@ export const Technologies = () => {
               <h5><strong>Bancos de Dados</strong></h5>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Git className="icon-svg" />
               <Github className="icon-svg" />
@@ -108,7 +108,7 @@ export const Technologies = () => {
               <h5><strong>Versionamento</strong></h5>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Npm className="icon-svg" />
               <Yarn className="icon-svg" />
@@ -118,7 +118,7 @@ export const Technologies = () => {
               <h5><strong>Gerenciamento de pacotes</strong></h5>
             </div>
           </div>
-          <div className="col-3">
+          <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
               <Visualstudio className="icon-svg" />
               <Docker className="icon-svg" />
