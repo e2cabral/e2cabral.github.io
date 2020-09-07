@@ -54,7 +54,7 @@ export const Projects = () => {
       <div className="col-md-2 col-sm-2 col-xs-12"></div>
       <div className="col-md-6 col-sm-6 col-xs-12 text-right">
         <h3>
-          Exemplo de Projeto
+          Projeto de gerador de <strong>qr code</strong>
         </h3>
         <p>
           Projeto desenvolvido apenas como forma de estudo. O projeto consiste em um gerador de <strong>QrCode</strong> para viabilizar o uso da tecnologia. 
