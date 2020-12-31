@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { Title } from '../Title/Title';
 
@@ -17,6 +17,7 @@ import { ReactComponent as Nodejs } from '../../assets/icons/nodejs.svg';
 import { ReactComponent as Typescript } from '../../assets/icons/typescript.svg';
 import { ReactComponent as Js } from '../../assets/icons/js.svg';
 import { ReactComponent as Csharp } from '../../assets/icons/csharp.svg';
+import { ReactComponent as Golang } from '../../assets/icons/golang.svg';
 
 import { ReactComponent as Postgresql } from '../../assets/icons/postgresql.svg';
 import { ReactComponent as Mysql } from '../../assets/icons/mysql.svg';
@@ -37,7 +38,7 @@ export const Technologies = () => {
   return (
     <div className="row py-5">
       <div className="col-12 text-center">
-        <Title title="Tecnologias" />
+        <Title title="Technologies" />
         <div className="row">
           <div className="col-md-3 col-sm-6 col-xs-12 py-5">
             <div className="text-center icons-container">
@@ -58,7 +59,7 @@ export const Technologies = () => {
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Front-end</strong></h5>
+              <h5><strong>Frontend</strong></h5>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12 py-5">
@@ -69,7 +70,7 @@ export const Technologies = () => {
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Back-end</strong></h5>
+              <h5><strong>Backend</strong></h5>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12 py-5">
@@ -77,10 +78,11 @@ export const Technologies = () => {
               <Typescript className="icon-svg" />
               <Js className="icon-svg" />
               <Csharp className="icon-svg" />
+              <Golang className="icon-svg" />
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Linguagens</strong></h5>
+              <h5><strong>Languages</strong></h5>
             </div>
           </div>
         </div>
@@ -94,7 +96,7 @@ export const Technologies = () => {
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Bancos de Dados</strong></h5>
+              <h5><strong>Databases</strong></h5>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12 py-5">
@@ -105,7 +107,7 @@ export const Technologies = () => {
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Versionamento</strong></h5>
+              <h5><strong>Version Control</strong></h5>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12 py-5">
@@ -115,7 +117,7 @@ export const Technologies = () => {
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Gerenciamento de pacotes</strong></h5>
+              <h5><strong>Package Management</strong></h5>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12 py-5">
@@ -125,7 +127,7 @@ export const Technologies = () => {
             </div>
             <div className="text-center">
               <hr className="divider-icons-container" />
-              <h5><strong>Ferramentas</strong></h5>
+              <h5><strong>Tools</strong></h5>
             </div>
           </div>
         </div>
