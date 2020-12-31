@@ -9,6 +9,7 @@ import { Projects } from '../../components/Projects/Projects';
 import { Footer } from '../../components/Footer/Footer';
 
 import '../../assets/css/global.css';
+import {GitHubStats} from "../../components/GitHubStats/GitHubStats";
 
 export const Home: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ export const Home: React.FC = () => {
       <Presentation />
       <Main>
         <About />
+        <GitHubStats />
         <Technologies />
         <Projects />
       </Main>
