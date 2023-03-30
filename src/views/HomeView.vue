@@ -51,7 +51,7 @@ onUnmounted(() => {
               Cabral Tech Consulting
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
-              Helping companies to reach their goals
+              We use technology as a tool to increase your business and products value
             </p>
           </div>
         </div>
@@ -68,13 +68,18 @@ onUnmounted(() => {
               class="p-4"
               :color="{ text: 'white', background: 'bg-gradient-success' }"
               title="About us"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum."
+              description="We are a technology consulting focused on increase
+              business and products value. Our main services are collaborative
+              creation, maintain and provide maintenance for developed software.
+
+              The collaborative creation is the process of create a product which
+              meets the requirements and its needs using the appropriated technologies,
+              infrastructure and architecture. The entire process is conducted in
+              collaboration with the clients and stakeholders.
+
+              The maintain service may be applied for software that we have developed,
+              and legacy software developed for third parts. We can make improvements
+              such as new features or improve what already exists."
               :action="{
               route: 'home',
               label: { text: 'Discover more', color: 'white' }
@@ -86,16 +91,16 @@ onUnmounted(() => {
               class="p-4"
               height="h-100"
               title="Projects"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum."
+              description="We have already worked on many types of projects since financial
+              market, legal/juridical, ecommerce and healthcare institutions. Compromising
+              ourselves with the high quality of the code, architecture, infrastructure and
+              fidelity of the business rules.
+
+              Providing value and solutions which increase the growth of the companies by
+              reaching and overcoming their goals."
               :action="{
               route: 'home',
-              label: { text: 'Read more' }
+              label: { text: 'See more' }
             }"
           />
         </div>
@@ -113,7 +118,7 @@ onUnmounted(() => {
               :action="{
               route:
                 'home',
-              label: { text: 'Read more' }
+              label: { text: 'See more' }
             }"
           />
         </div>
@@ -141,15 +146,17 @@ onUnmounted(() => {
                 <h3 class="text-white">
                   Do you want to know more about us?
                 </h3>
-                <p class="text-white text-md">
-                  You can discover a little more about our code quality, best practices, architecture and development concepts applied by visiting our Github.
-                </p>
+                  <p class="text-white text-md">
+                      You can discover more about us and keep in touch, and our creation process, analysis and how we increase your business value following our GitHub projects and contributions.
+                  </p>
 
                 <a
                     href="https://github.com/Cabral-Tech-Consultoria"
                     class="btn btn-sm mb-0 bg-gradient-success px-5 py-3 mt-4"
-                >Visit us</a
+                    target="_blank" rel="noopener noreferrer"
                 >
+                    Visit us
+                </a>
               </div>
             </div>
           </div>
@@ -160,12 +167,17 @@ onUnmounted(() => {
     <div class="container">
       <div class="row">
         <div class="d-flex flex-column w-100 text-center p-5 mb-8">
-          <h3>You can find us on</h3>
+          <h3>Follow us on our social networks</h3>
+            <p class="text-md">
+                Follow us on our social media and gather useful tips about software development,
+                <br />best practices, methodologies, concepts and much more.
+            </p>
           <div class="d-flex justify-content-center mt-3 flex-wrap">
             <a
-                href="https://www.creative-tim.com/product/material-kit"
+                href="https://www.instagram.com/cabraltech.consultoria/"
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
+                target="_blank" rel="noopener noreferrer"
                 title="Cabral Tech Consulting on instagram"
             >
               <img
@@ -180,6 +192,7 @@ onUnmounted(() => {
                 href="https://github.com/Cabral-Tech-Consultoria"
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
+                target="_blank" rel="noopener noreferrer"
                 title="Cabral Tech Consulting on GitHub"
             >
               <img
@@ -194,6 +207,7 @@ onUnmounted(() => {
                 class="mx-3"
                 data-bs-toggle="tooltip"
                 data-bs-placement="bottom"
+                target="_blank" rel="noopener noreferrer"
                 title="Cabral Tech Consulting on LinkedIn"
             >
               <img
