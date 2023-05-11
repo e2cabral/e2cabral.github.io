@@ -2,6 +2,91 @@
 import logo from '@/assets/img/logo-cabral-tech-sem-fundo-preto.png'
 import ceo from '@/assets/img/ceo-photo.jpg'
 import MaterialAvatar from '@/components/MaterialAvatar.vue'
+import { RouterLink } from 'vue-router'
+
+defineProps({
+  menus: {
+    type: Array,
+    name: String,
+    items: {
+      type: Array,
+      name: String,
+      href: String
+    },
+    default: () => [
+      {
+        name: 'company',
+        items: [
+          {
+            name: 'about us',
+            href: 'https://www.creative-tim.com/presentation'
+          },
+          {
+            name: 'freebies',
+            href: 'https://www.creative-tim.com/templates/free'
+          },
+          {
+            name: 'premium tools',
+            href: 'https://www.creative-tim.com/templates/premium'
+          },
+          { name: 'blog', href: 'https://www.creative-tim.com/blog' }
+        ]
+      },
+      {
+        name: 'resources',
+        items: [
+          { name: 'illustrations', href: 'https://iradesign.io/' },
+          {
+            name: 'bits & snippets',
+            href: 'https://www.creative-tim.com/bits'
+          },
+          {
+            name: 'affiliate program',
+            href: 'https://www.creative-tim.com/affiliates/new'
+          }
+        ]
+      },
+      {
+        name: 'help & support',
+        items: [
+          {
+            name: 'contact us',
+            href: 'https://www.creative-tim.com/contact-us'
+          },
+          {
+            name: 'knowledge center',
+            href: 'https://www.creative-tim.com/knowledge-center'
+          },
+          {
+            name: 'custom development',
+            href: 'https://services.creative-tim.com/'
+          },
+          {
+            name: 'sponsorships',
+            href: 'https://www.creative-tim.com/sponsorships'
+          }
+        ]
+      },
+      {
+        name: 'legal',
+        items: [
+          {
+            name: 'terms & conditions',
+            href: 'https://www.creative-tim.com/terms'
+          },
+          {
+            name: 'privacy policy',
+            href: 'https://www.creative-tim.com/privacy'
+          },
+          {
+            name: 'licenses (EULA)',
+            href: 'https://www.creative-tim.com/license'
+          }
+        ]
+      }
+    ]
+  }
+})
 </script>
 <template>
   <footer class="footer pt-5 mt-5">
@@ -9,9 +94,9 @@ import MaterialAvatar from '@/components/MaterialAvatar.vue'
       <div class="row">
         <div class="col-md-3 mb-4 ms-auto">
           <div>
-            <a :href="brand.route">
+            <RouterLink :to="{ name: 'home' }">
               <img :src="logo" class="mb-3 footer-logo-md" alt="Cabral Tech Consulting" />
-            </a>
+            </RouterLink>
           </div>
           <div>
             <div class="container p-0 m-0">
