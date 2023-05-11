@@ -1,11 +1,11 @@
 <script setup>
-import { RouterLink } from "vue-router";
-import { ref } from "vue";
+import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
 
 // images
-import ArrDark from "@/assets/img/down-arrow-dark.svg";
-import downArrow from "@/assets/img/down-arrow.svg";
-import DownArrWhite from "@/assets/img/down-arrow-white.svg";
+import ArrDark from '@/assets/img/down-arrow-dark.svg'
+import downArrow from '@/assets/img/down-arrow.svg'
+import DownArrWhite from '@/assets/img/down-arrow-white.svg'
 import logo from '@/assets/img/logo-sem-fundo.png'
 
 const props = defineProps({
@@ -29,45 +29,42 @@ const props = defineProps({
     type: Boolean,
     default: false
   }
-});
+})
 
 // set arrow  color
 function getArrowColor() {
   if (props.transparent && textDark.value) {
-    return ArrDark;
+    return ArrDark
   } else if (props.transparent) {
-    return DownArrWhite;
+    return DownArrWhite
   } else {
-    return ArrDark;
+    return ArrDark
   }
 }
 
 // set text color
 const getTextColor = () => {
-  let color;
+  let color
   if (props.transparent && textDark.value) {
-    color = "text-dark";
+    color = 'text-dark'
   } else if (props.transparent) {
-    color = "text-white";
+    color = 'text-white'
   } else {
-    color = "text-dark";
+    color = 'text-dark'
   }
 
-  return color;
-};
+  return color
+}
 
 // set nav color on mobile && desktop
 
-let textDark = ref(props.darkText);
-
+let textDark = ref(props.darkText)
 </script>
 <template>
   <nav
     class="navbar navbar-expand-lg top-0 my-3 blur border-radius-lg z-index-3 py-2 shadow py-2 start-0 end-0 mx-4 position-absolute mt-4 navbar-dark bg-gradient-dark z-index-3 py-3"
   >
-    <div
-      class="container-fluid px-0"
-    >
+    <div class="container-fluid px-0">
       <RouterLink
         class="navbar-brand d-none d-md-block text-white font-weight-bolder ms-sm-3"
         :to="{ name: 'home' }"
@@ -75,7 +72,7 @@ let textDark = ref(props.darkText);
         title="Cabral Tech a technology consulting"
         data-placement="bottom"
       >
-        <img :src="logo" width="120" alt="">
+        <img :src="logo" width="120" alt="" />
       </RouterLink>
       <button
         class="navbar-toggler shadow-none ms-2"
@@ -92,10 +89,7 @@ let textDark = ref(props.darkText);
           <span class="navbar-toggler-bar bar3"></span>
         </span>
       </button>
-      <div
-        class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0"
-        id="navigation"
-      >
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
         <ul class="navbar-nav navbar-nav-hover ms-auto">
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
@@ -106,11 +100,7 @@ let textDark = ref(props.darkText);
               aria-expanded="false"
             >
               Projects
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
+              <img :src="getArrowColor()" alt="down-arrow" class="arrow ms-2 d-lg-block d-none" />
               <img
                 :src="getArrowColor()"
                 alt="down-arrow"
@@ -126,14 +116,9 @@ let textDark = ref(props.darkText);
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
                   >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
                       <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
+                        <div class="w-100 d-flex align-items-center justify-content-between">
                           <div class="pe-8">
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -142,24 +127,20 @@ let textDark = ref(props.darkText);
                             </h6>
                             <span class="text-sm">Hospitals and health insurance</span>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
+                          <img :src="downArrow" alt="down-arrow" class="arrow" />
                         </div>
                       </div>
                     </a>
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'home' }"
+                        :to="{ name: 'projects', params: { project: 'fleury-innovations' } }"
                       >
                         Innovations Team
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'home' }"
+                        :to="{ name: 'projects', params: { project: 'fleury-rollout' } }"
                       >
                         Rollout Team
                       </RouterLink>
@@ -168,14 +149,9 @@ let textDark = ref(props.darkText);
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
                   >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
                       <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
+                        <div class="w-100 d-flex align-items-center justify-content-between">
                           <div>
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -184,24 +160,20 @@ let textDark = ref(props.darkText);
                             </h6>
                             <span class="text-sm">Financial Market</span>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
+                          <img :src="downArrow" alt="down-arrow" class="arrow" />
                         </div>
                       </div>
                     </a>
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'home' }"
+                        :to="{ name: 'projects', params: { project: 'cpqi-9th-gear' } }"
                       >
                         9th Gear
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'home' }"
+                        :to="{ name: 'projects', params: { project: 'cpqi-m7-consigned' } }"
                       >
                         M7 Consigned
                       </RouterLink>
@@ -210,14 +182,9 @@ let textDark = ref(props.darkText);
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
                   >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
                       <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
+                        <div class="w-100 d-flex align-items-center justify-content-between">
                           <div>
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -226,11 +193,7 @@ let textDark = ref(props.darkText);
                             </h6>
                             <span class="text-sm">E-commerce, financial market, BA and BI</span>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
+                          <img :src="downArrow" alt="down-arrow" class="arrow" />
                         </div>
                       </div>
                     </a>
@@ -252,14 +215,9 @@ let textDark = ref(props.darkText);
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
                   >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
                       <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
+                        <div class="w-100 d-flex align-items-center justify-content-between">
                           <div>
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -268,11 +226,7 @@ let textDark = ref(props.darkText);
                             </h6>
                             <span class="text-sm">Legal/Juridical</span>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
+                          <img :src="downArrow" alt="down-arrow" class="arrow" />
                         </div>
                       </div>
                     </a>
@@ -288,14 +242,9 @@ let textDark = ref(props.darkText);
                   <li
                     class="nav-item dropdown dropdown-hover dropdown-subitem list-group-item border-0 p-0"
                   >
-                    <a
-                      class="dropdown-item py-2 ps-3 border-radius-md"
-                      href="javascript:;"
-                    >
+                    <a class="dropdown-item py-2 ps-3 border-radius-md" href="javascript:;">
                       <div class="d-flex">
-                        <div
-                          class="w-100 d-flex align-items-center justify-content-between"
-                        >
+                        <div class="w-100 d-flex align-items-center justify-content-between">
                           <div>
                             <h6
                               class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0"
@@ -304,11 +253,7 @@ let textDark = ref(props.darkText);
                             </h6>
                             <span class="text-sm">Legal/Juridical</span>
                           </div>
-                          <img
-                            :src="downArrow"
-                            alt="down-arrow"
-                            class="arrow"
-                          />
+                          <img :src="downArrow" alt="down-arrow" class="arrow" />
                         </div>
                       </div>
                     </a>
