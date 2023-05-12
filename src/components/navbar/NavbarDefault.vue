@@ -200,13 +200,13 @@ let textDark = ref(props.darkText)
                     <div class="dropdown-menu mt-0 py-3 px-2 mt-3">
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'home' }"
+                        :to="{ name: 'projects', params: { project: 'iblue-doadin' } }"
                       >
                         Doadin
                       </RouterLink>
                       <RouterLink
                         class="dropdown-item ps-3 border-radius-md mb-1"
-                        :to="{ name: 'home' }"
+                        :to="{ name: 'projects', params: { project: 'iblue-darwin' } }"
                       >
                         Darwin
                       </RouterLink>
