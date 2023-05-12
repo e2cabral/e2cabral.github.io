@@ -75,22 +75,6 @@ onUnmounted(() => {
             }"
           />
         </div>
-        <!--        <div class="col-lg-4">-->
-        <!--          <FilledInfoCard-->
-        <!--            class="p-4"-->
-        <!--            height="h-100"-->
-        <!--            title="Projects"-->
-        <!--            :color="{ text: 'white', background: 'bg-gradient-dark' }"-->
-        <!--            :descriptions="[-->
-        <!--              'We have already worked on many types of projects since financial market, legal/juridical, ecommerce and healthcare institutions. Compromising ourselves with the high quality of the code, architecture, infrastructure and fidelity of the business rules.',-->
-        <!--              'Providing value and solutions which increase the growth of the companies by reaching and overcoming their goals.'-->
-        <!--            ]"-->
-        <!--            :action="{-->
-        <!--              route: 'home',-->
-        <!--              label: { text: 'See more' }-->
-        <!--            }"-->
-        <!--          />-->
-        <!--        </div>-->
         <div class="col-lg-6">
           <FilledInfoCard
             class="p-4"
