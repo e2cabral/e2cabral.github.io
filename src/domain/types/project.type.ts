@@ -17,4 +17,4 @@ export type Role = {
   description: string
 }
 
-export type Roles = 'Front-end' | 'Back-end' | 'Engineering'
+export type Roles = 'Front-end' | 'Back-end' | 'Engineering' | 'Mobile'
