@@ -56,25 +56,11 @@ export const cpqiM7consigned: ProjectDetails = {
   key: 'cpqi-m7-consigned',
   projectName: 'M7 Consigned App - M7 Consigned',
   description: [
-    'A healthcare institution with a challenge of improve its product and increase the number of schedules accomplished in its tool. We have done significant improvements on the main features, and developed from scratch a new section of features. The self-service functionalities are a group of features which provides autonomy to the clients by letting them interact directly with their schedules decreasing the calls to the call center.'
+    'We\'ve developed a mobile app to help employees from partner companies make consigned loans. The platform to perform this request of a loan it already exists, but it was too complicated to use, based on this information we\'ve started a mobile app.',
+    'The app was totally focus on improve the experience of the users on requesting a loan. We\'ve reached most of the employees.'
   ],
   technologies: [
-    'AWS',
-    'CloudWatch',
-    'Lambda',
-    'CodeBuild',
-    'CodePipeline',
-    'S3',
-    'SQS',
-    'SNS',
-    'EventBridge',
-    'Sensedia',
-    'MongoDB',
-    'ElasticSearch',
-    'Node',
-    'Typescript',
-    'React',
-    'Next.js',
+    'Flutter',
     'SOLID',
     'Clean Architecture',
     'DRY',
@@ -82,13 +68,17 @@ export const cpqiM7consigned: ProjectDetails = {
   ],
   stats: [
     {
-      increase: '+1200',
-      description: 'Daily schedules'
+      increase: '+300',
+      description: 'Employees Reached'
+    },
+    {
+      increase: '3',
+      description: 'Months Project'
     }
   ],
   roles: [
     {
-      role: 'Front-end',
+      role: 'Mobile',
       description:
         'We were responsible for developing a brand new app and its features which improved the user experience, provided autonomy to the users and increased the number of users confident to use the service.'
     },
