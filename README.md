@@ -1,3 +1,12 @@
-## Welcome to my personal GitHub portfolio
+# Edson Cabral Junior Portfolio
 
-Here I'll share the most of projects that I'm working. So I hope you enjoy it!
+A modern portfolio built with Vite, React, and TypeScript.
+
+## Scripts
+
+```bash
+npm install
+npm run dev
+npm run build
+npm run lint
+```
