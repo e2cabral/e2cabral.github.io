@@ -38,27 +38,27 @@ export type NarrativePoint = {
 };
 
 export const headline =
-  'Senior Full Stack Engineer building scalable systems with Node.js, Golang, TypeScript, and AWS.';
+  'Senior Full Stack Engineer specialized in distributed systems, cloud-native architecture, and technical leadership of SaaS products.';
 
 export const summary =
-  'Senior Full Stack Engineer focused on distributed architecture, product ownership, and cloud-native systems. I build across backend, frontend, and infrastructure with strong emphasis on Node.js, TypeScript, AWS, Golang, event-driven design, observability, and production-grade SaaS platforms.';
+  'I work at the intersection of software engineering and product vision. I build scalable systems using Node.js, Go, TypeScript, and AWS ecosystems, focusing on event-driven architectures, observability, and enterprise-grade performance.';
 
 export const overviewNarrative: NarrativePoint[] = [
   {
-    title: 'Currently',
-    text: 'Working as a Senior Full Stack Engineer at iblue Consulting, with a profile centered on scalable software delivery and architecture ownership.',
+    title: 'Present',
+    text: 'Senior Full Stack Engineer at iblue Consulting, focused on high-scalability delivery and architectural ownership.',
   },
   {
     title: 'Context',
-    text: 'Experience spans finance, healthcare, telecom, and digital products, combining product delivery with backend and cloud decision-making.',
+    text: 'Robust experience in Fintechs, Healthcare, Telecom, and digital products, connecting technical decisions to business goals.',
   },
   {
     title: 'Background',
-    text: 'Based in Nova Iguacu, Rio de Janeiro, with academic experience at Pontificia Universidade Catolica do Parana and fluency across Portuguese, English, and French.',
+    text: 'Based in Rio de Janeiro, with continuous training and technical fluency for global environments.',
   },
   {
-    title: 'Beyond work',
-    text: 'I also invest in side projects, technical learning, and community work, including volunteer music teaching and public product building.',
+    title: 'Side Projects',
+    text: 'Founder of SaaS initiatives and open-source contributor, maintaining a hands-on approach to cutting-edge technologies.',
   },
 ];
 
