@@ -263,8 +263,8 @@ export const featuredProjects: Project[] = [
     ],
     tech: ['TypeScript', 'Node.js', 'MySQL', 'Zod', 'ESBuild'],
     href: 'https://www.npmjs.com/package/tiposaurus-rex',
-    secondaryHref: 'https://github.com/e2cabral/tiposaurus-rex',
-    secondaryLabel: 'Repository',
+    secondaryHref: 'https://e2cabral.github.io/tiposaurus-rex/',
+    secondaryLabel: 'Documentation',
   },
 ];
 

@@ -49,10 +49,9 @@ function App() {
       <main className="layout-grid">
         <section className="terminal-window hero-window" id="overview">
           <div className="window-bar">
-            <span className="window-dot window-dot-red" />
-            <span className="window-dot window-dot-amber" />
-            <span className="window-dot window-dot-green" />
+            <span className="window-dot" />
             <p className="window-title">profile.sys</p>
+            <span className="window-dot" />
           </div>
 
           <div className="window-content hero-content">
@@ -101,6 +100,11 @@ function App() {
         </section>
 
         <section className="terminal-window info-window">
+          <div className="window-bar">
+            <span className="window-dot" />
+            <p className="window-title">about.sh</p>
+            <span className="window-dot" />
+          </div>
           <div className="window-content">
             <p className="terminal-label">./about --expanded</p>
             <div className="signal-grid">
@@ -125,6 +129,11 @@ function App() {
         </section>
 
         <section className="terminal-window focus-window">
+          <div className="window-bar">
+            <span className="window-dot" />
+            <p className="window-title">optimization.sys</p>
+            <span className="window-dot" />
+          </div>
           <div className="window-content">
             <p className="terminal-label">&gt; ./optimization_goals.sh</p>
             <div className="section-heading">
@@ -160,6 +169,11 @@ function App() {
         </section>
 
         <section className="terminal-window experience-window" id="experience">
+          <div className="window-bar">
+            <span className="window-dot" />
+            <p className="window-title">experience_log.txt</p>
+            <span className="window-dot" />
+          </div>
           <div className="window-content">
             <p className="terminal-label">&gt; ls -la experience/</p>
             <div className="section-heading">
@@ -190,6 +204,11 @@ function App() {
         </section>
 
         <section className="terminal-window projects-window" id="projects">
+          <div className="window-bar">
+            <span className="window-dot" />
+            <p className="window-title">projects_v2.bin</p>
+            <span className="window-dot" />
+          </div>
           <div className="window-content">
             <p className="terminal-label">&gt; grep "featured" projects/*</p>
             <div className="section-heading">
@@ -234,6 +253,11 @@ function App() {
         </section>
 
         <section className="terminal-window stack-window" id="stack">
+          <div className="window-bar">
+            <span className="window-dot" />
+            <p className="window-title">stack_env.cfg</p>
+            <span className="window-dot" />
+          </div>
           <div className="window-content">
             <p className="terminal-label">&gt; env | grep TECH</p>
             <div className="section-heading">
@@ -275,6 +299,11 @@ function App() {
         </section>
 
         <section className="terminal-window contact-window" id="contact">
+          <div className="window-bar">
+            <span className="window-dot" />
+            <p className="window-title">contact_uplink.io</p>
+            <span className="window-dot" />
+          </div>
           <div className="window-content">
             <p className="terminal-label">&gt; tail -f contact.log</p>
             <div className="section-heading">
@@ -297,6 +326,30 @@ function App() {
           </div>
         </section>
       </main>
+
+      <footer className="hud-footer">
+        <div className="hud-data">
+          <div className="hud-item">
+            <span className="hud-label">Energy</span>
+            <span className="hud-value">MAX</span>
+          </div>
+          <div className="hud-item">
+            <span className="hud-label">Humidity</span>
+            <span className="hud-value">75%</span>
+          </div>
+          <div className="hud-item">
+            <span className="hud-label">Temp</span>
+            <span className="hud-value">17°F</span>
+          </div>
+          <div className="hud-item">
+            <span className="hud-label">Status</span>
+            <span className="hud-value">ONLINE</span>
+          </div>
+        </div>
+        <div className="hud-coords">
+          4.5895° S 138.1417° E
+        </div>
+      </footer>
     </div>
   );
 }
